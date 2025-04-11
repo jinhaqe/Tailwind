@@ -13,7 +13,7 @@ export default function Main({ setPage }) {
                   Select a project or get started with a new one
                </p>
                <button
-                  className="mt-9 px-6 py-2 bg-sky-900 text-white font-semibold rounded-lg hover:bg-sky-950 transition"
+                  className="mt-9 px-6 py-2 bg-sky-900 text-white font-semibold rounded-lg hover:bg-sky-950 transition dark:text-black dark:hover:bg-pink-400 dark:bg-pink-300 dark:hover:text-white dark:border-none"
                   onClick={() => setPage((prev) => !prev)}
                >
                   Project Add

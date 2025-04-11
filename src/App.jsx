@@ -5,6 +5,7 @@ import AddList from "./components/AddList.jsx";
 import DetailList from "./components/DetailList.jsx";
 
 import { useState } from "react";
+import { ThemeProvider } from "./components/ThemeProvider.jsx";
 
 function App() {
    const [page, setPage] = useState(false);
@@ -17,16 +18,18 @@ function App() {
    };
 
    return (
-      <div className="h-screen flex flex-row items-center">
-         <List setPage={setPage} list={list} setDetail={setDetail} />
-         {detail ? (
-            <DetailList detail={detail} deleteItem={deleteItem} />
-         ) : page ? (
-            <AddList setPage={setPage} setList={setList} />
-         ) : (
-            <Main setPage={setPage} />
-         )}
-      </div>
+      <ThemeProvider>
+         <div className="h-screen flex flex-row items-center dark:bg-pink-50">
+            <List setPage={setPage} list={list} setDetail={setDetail} />
+            {detail ? (
+               <DetailList detail={detail} deleteItem={deleteItem} />
+            ) : page ? (
+               <AddList setPage={setPage} setList={setList} />
+            ) : (
+               <Main setPage={setPage} />
+            )}
+         </div>
+      </ThemeProvider>
    );
 }
 

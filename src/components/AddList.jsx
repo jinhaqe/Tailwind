@@ -49,13 +49,13 @@ export default function AddList({ setPage, setList }) {
       <div className="w-[600px] p-6 ml-10 h-screen pt-30">
          <div className="flex flex-row justify-end items-center">
             <button
-               className="mr-2 px-6 py-2 w-[100px] rounded-lg opacity-75 hover:bg-sky-950 hover:text-white transition"
+               className="mr-2 px-6 py-2 w-[100px] rounded-lg opacity-75 hover:bg-sky-950 hover:text-white transition dark:hover:bg-pink-400"
                onClick={() => setPage((prev) => !prev)}
             >
                취소
             </button>
             <button
-               className="px-6 py-2 w-[100px] text-white bg-sky-900 rounded-lg opacity-75 hover:bg-sky-950 transition"
+               className="px-6 py-2 w-[100px] text-white bg-sky-900 rounded-lg opacity-75 hover:bg-sky-950 transition hover:text-white dark:text-black dark:hover:bg-pink-400 dark:bg-pink-300"
                onClick={handleSave}
             >
                저장
@@ -74,7 +74,7 @@ export default function AddList({ setPage, setList }) {
                      type="text"
                      id="title"
                      name="title"
-                     className="w-full p-2 mt-2 border-2 border-gray-300 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-sky-800"
+                     className="w-full p-2 mt-2 border-2 border-gray-300 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-sky-800 dark:focus:ring-pink-200 dark:bg-gray-50 dark:border-pink-200"
                      placeholder="제목을 입력하세요"
                      value={formData.title}
                      onChange={handleChange}
@@ -90,7 +90,7 @@ export default function AddList({ setPage, setList }) {
                   <textarea
                      id="description"
                      name="description"
-                     className="w-full p-2 mt-2 border-2 border-gray-300 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-sky-800"
+                     className="w-full p-2 mt-2 border-2 border-gray-300 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-sky-800 dark:focus:ring-pink-200 dark:bg-gray-50 dark:border-pink-200"
                      placeholder="설명을 입력하세요"
                      rows="4"
                      value={formData.description}
@@ -108,7 +108,7 @@ export default function AddList({ setPage, setList }) {
                      type="date"
                      id="date"
                      name="date"
-                     className="w-full p-2 mt-2 border-2 border-gray-300 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-sky-800"
+                     className="w-full p-2 mt-2 border-2 border-gray-300 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-sky-800 dark:focus:ring-pink-200 dark:bg-gray-50 dark:border-pink-200"
                      value={formData.date}
                      onChange={handleChange}
                   />

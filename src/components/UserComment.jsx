@@ -33,13 +33,13 @@ export default function UserComment() {
          <div className="flex mb-4">
             <input
                type="text"
-               className="m-3 border w-[380px] border-gray-300 rounded px-4 py-2 mr-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+               className="m-3 border w-[380px] border-gray-300 rounded px-4 py-2 mr-2 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-pink-200 dark:bg-gray-50 dark:border-pink-200"
                placeholder="할 일을 입력하세요"
                value={input}
                onChange={(e) => setInput(e.target.value)}
             />
             <button
-               className="my-3 h-[42px] bg-sky-900 text-white px-4 py-2 rounded hover:bg-sky-950"
+               className="my-3 h-[42px] bg-sky-900 text-white px-4 py-2 rounded hover:bg-sky-950 dark:hover:bg-pink-400 dark:bg-pink-300 dark:hover:text-white"
                onClick={addTodo}
             >
                추가
@@ -55,7 +55,7 @@ export default function UserComment() {
                   return (
                      <li
                         key={com.id}
-                        className="flex justify-between bg-gray-100 py-3 px-4 w-[380px] mb-2"
+                        className="flex justify-between bg-gray-100 py-3 px-4 w-[380px] mb-2 dark:bg-white"
                      >
                         <p
                            onClick={() => toggleTodo(com.id)}

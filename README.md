@@ -9,8 +9,23 @@
   - Vite
   - Tailwind CSS
 
+<br>
 
+## 2. 현재 디렉토리
+```
+src/
+├── components/
+│   ├── AddList/            # 새로운 일정을 추가하는 입력 폼
+│   ├── DetailList/         # 일정 클릭 시 상세 내용을 보여주는 컴포넌트
+│   ├── List/               # 현재 추가된 일정 리스트 + 다크모드/핑크모드 토글 버튼
+│   ├── Main/               # 일정이 없을 경우 메시지와 프로젝트 추가 버튼을 표시
+│   ├── UserComment/        # DetailList 내부에서 사용하는 투두리스트 작성 영역
+│   └── ThemeProvider/      # 다크모드 및 핑크모드 토글을 전역으로 관리
+│
+├── App.js                  # 최상위 컴포넌트
+└── index.js                # 앱 진입점
+```
 
-## Expanding the ESLint configuration
+<br>
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3. 주요 기능

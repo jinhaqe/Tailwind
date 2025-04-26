@@ -1,11 +1,15 @@
-# React + Vite
+# 일정 관리 프로그램
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+현재 일정을 관리하고 해당 일정의 상세페이지에서 투두리스트를 작성하고 볼 수 있는 프로그램을 제작하였습니다.
 
-Currently, two official plugins are available:
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 1. 개발 환경
+  - React
+  - Vite
+  - Tailwind CSS
+
+
 
 ## Expanding the ESLint configuration
 

@@ -60,7 +60,10 @@ src/
    - 사용자의 취향에 맞게 시각적 테마를 다크모드 또는 핑크모드로 바꿀 수 있음
 
    <br>
-  
+
 ## 3. 결과 화면
 
 <br>
+
+![메인화면](https://github.com/user-attachments/assets/c88fed61-e77a-431d-9269-0616deae8b94)
+
